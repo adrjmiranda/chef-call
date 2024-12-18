@@ -1,0 +1,20 @@
+{
+  "name": "chef-call",
+  "version": "1.0.0",
+  "description": "ChefCall is a web-based food delivery platform that connects customers to a wide variety of dishes and flavors, directly at their doorstep. The project was developed with a focus on offering an intuitive, fast and reliable experience for both end users and system administrators.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrjmiranda/chef-call.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrjmiranda/chef-call/issues"
+  },
+  "homepage": "https://github.com/adrjmiranda/chef-call#readme"
+}
