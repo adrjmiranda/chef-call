@@ -21,7 +21,7 @@ ChefCall is a web-based food delivery platform that connects customers to a wide
 
 ### Back-End:
 
-- PHP ​​8 with MVC architecture.
+- PHP 8 with MVC architecture.
 - Relational database with Doctrine ORM for efficient data management.
 - Slim Framework for routes and middleware.
 

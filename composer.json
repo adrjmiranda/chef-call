@@ -1,0 +1,25 @@
+{
+	"version": "1.0.0",
+	"name": "adrjmiranda/chef-call",
+	"description": "ChefCall is a web-based food delivery platform that connects customers to a wide variety of dishes and flavors, directly at their doorstep. The project was developed with a focus on offering an intuitive, fast and reliable experience for both end users and system administrators.",
+	"type": "project",
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"Adrjmiranda\\ChefCall\\": "src/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Adriano Miranda",
+			"email": "adrjmiranda@gmail.com"
+		}
+	],
+	"require": {},
+	"scripts": {
+		"serve": "php -S localhost:8000 -t public"
+	},
+	"config": {
+		"process-timeout": 0
+	}
+}
