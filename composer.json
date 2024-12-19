@@ -6,8 +6,10 @@
 	"license": "MIT",
 	"autoload": {
 		"psr-4": {
-			"App\\Controllers\\": "app/controllers/",
+			"App\\Controllers\\Site\\": "app/controllers/site/",
+			"App\\Controllers\\Admin\\": "app/controllers/admin/",
 			"App\\Core\\": "app/core/",
+			"App\\Core\\Helpers\\": "app/core/helpers/",
 			"App\\Models\\": "app/models/"
 		}
 	},
