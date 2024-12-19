@@ -12,7 +12,8 @@ class HomeController extends BaseController
   public function index(Request $request, Response $response, array $args = []): Response
   {
     $view = $this->render('site.home', [
-      'page_title' => 'Home'
+      'page_title' => 'Home',
+      'title' => 'Home'
     ]);
     $response->getBody()->write($view);
 
