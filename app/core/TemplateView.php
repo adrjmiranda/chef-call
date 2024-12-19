@@ -9,8 +9,8 @@ use Twig\Loader\FilesystemLoader;
 
 class TemplateView
 {
-  private ?Environment $environment = null;
-  private ?FilesystemLoader $loader = null;
+  private static ?Environment $environment = null;
+  private static ?FilesystemLoader $loader = null;
 
   private static function getViewsPath(): string
   {
@@ -19,13 +19,14 @@ class TemplateView
 
   public static function getFileTemplate(string $templateName): ?string
   {
-    $templatePath = str_replace('.', '/', $templateName) . '.twig';
+    $templateName = str_replace('.', '/', $templateName) . '.twig';
+    $templatePath = self::getViewsPath() . '/' . $templateName;
 
     if (!file_exists($templatePath)) {
       throw new Exception("Template {$templatePath} not found", 500);
     }
 
-    return $templatePath;
+    return $templateName;
   }
 
   private static function templateLoader(): FilesystemLoader
@@ -40,7 +41,7 @@ class TemplateView
   public static function getEnviroment(): Environment
   {
     if (self::$environment === null) {
-      self::$enviroment = new Environment(self::templateLoader(), [
+      self::$environment = new Environment(self::templateLoader(), [
         'auto_reload' => true,
         'optimizations' => -1,
         'cache' => false

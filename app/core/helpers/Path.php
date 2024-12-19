@@ -6,6 +6,6 @@ class Path
 {
   public static function root(): string
   {
-    return dirname(dirname(dirname(__FILE__)));
+    return dirname(dirname(dirname(dirname(__FILE__))));
   }
 }

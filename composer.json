@@ -32,7 +32,7 @@
 		"doctrine/migrations": "^3.8"
 	},
 	"scripts": {
-		"serve": "php -S localhost:8000 -t public"
+		"dev": "php -S localhost:8000 -t public"
 	},
 	"config": {
 		"process-timeout": 0
