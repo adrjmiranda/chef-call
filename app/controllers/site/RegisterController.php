@@ -15,7 +15,7 @@ use Psr\Http\Message\ResponseInterface as Response;
 class RegisterController extends BaseController
 {
   /**
-   * Method responsible for recreating the user record view
+   * Method responsible for redefining the user registration view
    * @param \Psr\Http\Message\ServerRequestInterface $request
    * @param \Psr\Http\Message\ResponseInterface $response
    * @param array $args
