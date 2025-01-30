@@ -1,3 +1,59 @@
 {% extends "site/master.twig" %} {% block content %}
-<h1>{{ title }}</h1>
+<div id="user_auth_container">
+	<form action="#" method="post">
+		<h1>Satisfy your hunger now! Register!</h1>
+
+		<div class="input_field">
+			<label for="first_name">First name:</label>
+			<input
+				type="text"
+				name="first_name"
+				id="first_name"
+				placeholder="Your first name"
+			/>
+		</div>
+
+		<div class="input_field">
+			<label for="last_name">Last name:</label>
+			<input
+				type="text"
+				name="last_name"
+				id="last_name"
+				placeholder="Your last name"
+			/>
+		</div>
+
+		<div class="input_field">
+			<label for="email">E-mail:</label>
+			<input
+				type="email"
+				name="email"
+				id="email"
+				placeholder="Your best email"
+			/>
+		</div>
+
+		<div class="input_field">
+			<label for="password">Password:</label>
+			<input
+				type="password"
+				name="password"
+				id="password"
+				placeholder="Create a password"
+			/>
+		</div>
+
+		<div class="input_field">
+			<label for="password_confirmation">Password confirmation:</label>
+			<input
+				type="password"
+				name="password_confirmation"
+				id="password_confirmation"
+				placeholder="Confirm your password"
+			/>
+		</div>
+
+		<button type="submit" class="auth_form_btn">Register now</button>
+	</form>
+</div>
 {% endblock %}
