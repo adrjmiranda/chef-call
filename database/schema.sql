@@ -8,7 +8,8 @@ CREATE TABLE `users` (
   `last_name` VARCHAR(255) NOT NULL,
   `email` VARCHAR(255) UNIQUE NOT NULL,
   `password` VARCHAR(255) NOT NULL,
-  `phone` VARCHAR(15) NOT NULL,
+  `phone` VARCHAR(15),
+  `image_name` VARCHAR(15),
   `role` ENUM('admin', 'customer') NOT NULL DEFAULT 'customer'
 );
 
