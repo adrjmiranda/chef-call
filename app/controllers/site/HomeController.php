@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Controllers\Site;
 
 use App\Core\BaseController;
@@ -8,7 +7,7 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 
 /**
- * Controller responsible for the homepage
+ * Controller responsible for the home page
  * 
  * @package App\Controllers\Site
  */
@@ -16,6 +15,7 @@ class HomeController extends BaseController
 {
   /**
    * Method responsible for redefining the home view
+   * 
    * @param \Psr\Http\Message\ServerRequestInterface $request
    * @param \Psr\Http\Message\ResponseInterface $response
    * @param array $args

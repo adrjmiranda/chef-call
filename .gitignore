@@ -10,3 +10,5 @@ composer.phar
 /cache/
 
 .env
+
+/.vscode/

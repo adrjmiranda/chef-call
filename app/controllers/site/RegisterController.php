@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Controllers\Site;
 
 use App\Core\BaseController;
@@ -16,6 +15,7 @@ class RegisterController extends BaseController
 {
   /**
    * Method responsible for redefining the user registration view
+   * 
    * @param \Psr\Http\Message\ServerRequestInterface $request
    * @param \Psr\Http\Message\ResponseInterface $response
    * @param array $args
